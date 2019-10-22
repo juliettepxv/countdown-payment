@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple</title>
+</head>
+<body>
+    <div class="container" id="exemple"></div>
+</body>
+
+<!-- le script et la css-->
+<link rel="stylesheet" href="dist/count-down.css">
+<script type="text/javascript" rel="script" src="dist/count-down.js"></script>
+
+<!--prpre à cet exemple... -->
+<style>
+    #exemple{
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        background-color: #444;
+    }
+    .container{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        new CountDown(
+            "exemple",
+            "2020/01/01 00:00:00" //date de fin du compteur
+            //"2019/10/21 18:00:00" //date de fin du compteur
+        );
+    });
+</script>
+
+
+</html>

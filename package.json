@@ -1,0 +1,50 @@
+{
+  "name": "cayceo-ui",
+  "version": "1.0.28",
+  "description": "L'interface utilisateur des bornes Cayceo",
+  "license": "WTFPL",
+  "main": "dist/cayceoUi.js",
+  "scripts": {
+    "watch-dev": "webpack --watch --config _builders/webpack.dev.js",
+    "build-prod": "webpack --config _builders/webpack.prod.js",
+    "build-prod-stats": "webpack --config _builders/webpack.prod.js --json > _builders/stats-prod.json",
+    "npm-install": "npm install",
+    "npm-publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juliettepxv/cayceo-ui.git"
+  },
+  "dependencies": {
+    "event-emitter-es6": "^1.1.5",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-loader": "^3.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "install": "^0.13.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "less-plugin-autoprefix": "^2.0.0",
+    "md5-file": "^4.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "npm": "^6.11.2",
+    "raw-loader": "^3.1.0",
+    "style-loader": "^1.0.0",
+    "svg-sprite-loader": "^4.1.6",
+    "svgo": "^1.3.0",
+    "svgo-loader": "^2.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-merge": "^4.2.1"
+  }
+}
